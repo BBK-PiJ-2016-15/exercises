@@ -1,9 +1,9 @@
 println "Type a number"
 String n = System.console()readLine()
-Double num1 = Integer.parseInt(n)
+Double num1 = Double.parseDouble(n)
 println 'Please type a second number'
 String m = System.console()readLine()
-Double num2 = Integer.parseInt(m)
+Double num2 = Double.parseDouble(m)
 
 
 println "Please, choose the operator"
@@ -32,3 +32,6 @@ else {
 	println "Error! You had to choose one of the four options above."
 	println "This programme will stop running."
 }
+
+// Question: the exercise suggested to use the method "Double.parseDouble()"
+// 			 Why the code is working with correctly even if I used the method "Integer.parseInteger"?

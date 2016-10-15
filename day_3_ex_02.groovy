@@ -32,6 +32,3 @@ else {
 	println "Error! You had to choose one of the four options above."
 	println "This programme will stop running."
 }
-
-// Question: the exercise suggested to use the method "Double.parseDouble()"
-// 			 Why the code is working with correctly even if I used the method "Integer.parseInteger"?

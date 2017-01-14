@@ -4,14 +4,12 @@ For example, if the user enters the text “It was a dark and stormy night” th
 a saw tI”.
 */
 
+println "Please type a word or a sentence and I will print it followed by its reverse"
+String word = System.console().readLine()
+int size = word.length();
+String new_word = ""
 
-println 'Type your text: '
-String sentence = System.console().readLine()
-
-int len_sent = sentence.length()
-print sentence
-
-for (count = 1 ; count <= len_sent ; count ++)
-	print sentence.charAt(len_sent - count)
-
-println '\n'+'Done!'
+for(i = 0; i < size; i ++) {
+	new_word = new_word + word.charAt(size - 1 - i)
+}
+println word + new_word
